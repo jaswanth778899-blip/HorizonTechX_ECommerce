@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLT — Gadgets Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">VOLT.</div>
+
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#cart">Cart (<span id="cartCount">0</span>)</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p>NEW SEASON LINEUP</p>
+
+    <h1>
+      Gadgets worth<br>
+      keeping on the desk.
+    </h1>
+
+    <p class="description">
+      Eight products. No filler catalogue, no fake discounts —
+      just audio, wearables and desk gear.
+    </p>
+
+    <a href="#shop" class="button">
+      Browse the shop →
+    </a>
+  </section>
+
+  <section class="features">
+    <div>
+      <h3>Free 2-day shipping</h3>
+      <p>On every order</p>
+    </div>
+
+    <div>
+      <h3>3-year warranty</h3>
+      <p>Repair or replace</p>
+    </div>
+
+    <div>
+      <h3>30-day returns</h3>
+      <p>Easy returns</p>
+    </div>
+  </section>
+
+  <section id="shop" class="shop">
+
+    <p>STORE</p>
+    <h2>All products</h2>
+
+    <div id="products" class="products"></div>
+
+  </section>
+
+  <section id="cart" class="cart">
+
+    <p>YOUR ORDER</p>
+    <h2>Shopping cart</h2>
+
+    <div id="cartItems">
+      Your cart is empty.
+    </div>
+
+    <h3>
+      Total: $<span id="cartTotal">0.00</span>
+    </h3>
+
+    <button onclick="checkout()">Checkout</button>
+
+  </section>
+
+  <footer>
+    <h2>VOLT.</h2>
+    <p>Gadgets, engineered plainly.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
